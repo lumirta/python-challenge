@@ -27,7 +27,7 @@ if candidate_name not in candidate_receivedvotes:
 
        candidate_votes[candidate_name] += 1
 
-   for candidate_name in candidate_votes: 
+for candidate_name in candidate_votes: 
         
         votes = candidate_votes[candidate_name]
     
@@ -36,4 +36,18 @@ if candidate_name not in candidate_receivedvotes:
       
         print(candidate_results)
       
+
+if (votes > totalnumver_won) and (vote_percentage > percentage_won ): 
+            
+            winning_count = votes
+            winning_percentage = vote_percentage
+            
+            winning_candidate = candidate_name
+
+winning_candidate_summary = (
+        f"-----------------------\n"
+        f"Winner: {winning_candidate}\n"
+        f"Winning Percentage: {winning_percentage:.1f}%\n"
+        f"-----------------------\n")
+print(winning_candidate_summary)
 
